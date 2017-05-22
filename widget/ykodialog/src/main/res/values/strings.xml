@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">YkoDialog</string>
+    <string name="default_title">温馨提示</string>
+</resources>
