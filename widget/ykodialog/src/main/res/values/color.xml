@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_background">#f5f5f5</color>
+    <color name="message_left">@android:color/holo_red_light</color>
+    <color name="message_right">@android:color/holo_blue_dark</color>
+
+</resources>
