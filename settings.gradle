@@ -1,2 +1,3 @@
-include ':app', ':ykodialog'
+include ':app', ':ykodialog', ':wave'
 project(':ykodialog').projectDir = new File("widget/ykodialog")
+project(':wave').projectDir = new File("widget/wave")

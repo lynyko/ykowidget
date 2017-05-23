@@ -1,29 +1,33 @@
 package com.yko.widget;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.TextView;
 
-import com.yko.ykodialog.YkoMessageDialog;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-public class MainActivity extends AppCompatActivity {
+    TextView tv;
+    TextView tvDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        new YkoMessageDialog.Builder(this).setTitle("测试标题")
-                .setLeftButton("我要取消", null)
-                .setRightButton("我要确认", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Toast.makeText(MainActivity.this, "点击确认", Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .setMessage("测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息测试信息")
-                .setGravity(YkoMessageDialog.Builder.GRAVITY_BOTTOM)
-                .setmOutsideFocusable(false)
-                .buidle().show();
+        tv = (TextView) findViewById(R.id.tv);
+        tvDialog = (TextView) findViewById(R.id.tv_dialog);
+
+        tv.setOnClickListener(this);
+        tvDialog.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v == tv) {
+            startActivity(new Intent(this, MainActivity1.class));
+        } else if(v == tvDialog){
+            startActivity(new Intent(this, DialogActivity.class));
+        }
     }
 }
