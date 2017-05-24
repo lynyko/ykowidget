@@ -18,7 +18,8 @@
         </activity>
 
         <activity android:name=".DialogActivity"/>
-        <activity android:name=".MainActivity1"/>
+        <activity android:name=".pinyinheader.PinyinHeaderActivity"/>
+        <activity android:name=".SwitchActivity"/>
     </application>
 
 </manifest>

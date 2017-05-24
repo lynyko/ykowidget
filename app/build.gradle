@@ -30,7 +30,8 @@ dependencies {
     compile project(':ykodialog')
     compile 'com.jakewharton:butterknife:8.6.0'
     compile 'com.github.liuguangqiang.SuperRecyclerView:super-recyclerview:0.1.2'
-    compile project(path: ':wave')
+    compile project(path: ':PinyinHeader')
     compile 'cc.solart:turbo-recyclerview-helper:1.0.3-beta'
     compile 'io.github.openfeign:feign-gson:9.5.0'
+    compile project(':SwitchLibarary')
 }

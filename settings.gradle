@@ -1,3 +1,10 @@
-include ':app', ':ykodialog', ':wave'
-project(':ykodialog').projectDir = new File("widget/ykodialog")
-project(':wave').projectDir = new File("widget/wave")
+include ':app', ':ykodialog', ':Refresh_library', ':pulllistview', ':PinyinHeader', ':Okgo',
+        ':PhotoViewLib', ':TakephotoLibrary', ':SwitchLibarary'
+project(':ykodialog').projectDir = new File("Libarary/ykodialog")
+project(':Refresh_library').projectDir = new File("Libarary/Refresh_library")
+project(':pulllistview').projectDir = new File("Libarary/pulllistview")
+project(':PinyinHeader').projectDir = new File("Libarary/PinyinHeader")
+project(':Okgo').projectDir = new File("Libarary/Okgo")
+project(':PhotoViewLib').projectDir = new File("Libarary/PhotoViewLib")
+project(':TakephotoLibrary').projectDir = new File("Libarary/TakephotoLibrary")
+project(':SwitchLibarary').projectDir = new File("Libarary/SwitchLibarary")
